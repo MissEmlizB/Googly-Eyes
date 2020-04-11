@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A11CD94F2441DC1300D7177D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD94E2441DC1300D7177D /* AppDelegate.swift */; };
+		A11CD9512441DC1300D7177D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9502441DC1300D7177D /* ViewController.swift */; };
+		A11CD9532441DC1A00D7177D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11CD9522441DC1A00D7177D /* Assets.xcassets */; };
+		A11CD9562441DC1A00D7177D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11CD9542441DC1A00D7177D /* Main.storyboard */; };
+		A11CD9612441DCB800D7177D /* FaceFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD95F2441DCB800D7177D /* FaceFinder.swift */; };
+		A11CD9622441DCB800D7177D /* GooglyEyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9602441DCB800D7177D /* GooglyEyes.swift */; };
+		A11CD9642441DE2A00D7177D /* GooglyEyeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9632441DE2A00D7177D /* GooglyEyeScene.swift */; };
+		A11CD9662441E2DE00D7177D /* ViewController + Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */; };
+		A11CD96D2441E4A000D7177D /* DragAndDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD96C2441E4A000D7177D /* DragAndDropView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A11CD94B2441DC1300D7177D /* Googly Eyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Googly Eyes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11CD94E2441DC1300D7177D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A11CD9502441DC1300D7177D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A11CD9522441DC1A00D7177D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A11CD9552441DC1A00D7177D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A11CD9572441DC1A00D7177D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A11CD9582441DC1A00D7177D /* Googly_Eyes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Googly_Eyes.entitlements; sourceTree = "<group>"; };
+		A11CD95F2441DCB800D7177D /* FaceFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceFinder.swift; sourceTree = "<group>"; };
+		A11CD9602441DCB800D7177D /* GooglyEyes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglyEyes.swift; sourceTree = "<group>"; };
+		A11CD9632441DE2A00D7177D /* GooglyEyeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglyEyeScene.swift; sourceTree = "<group>"; };
+		A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Actions.swift"; sourceTree = "<group>"; };
+		A11CD96C2441E4A000D7177D /* DragAndDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A11CD9482441DC1300D7177D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A11CD9422441DC1300D7177D = {
+			isa = PBXGroup;
+			children = (
+				A11CD94D2441DC1300D7177D /* Googly Eyes */,
+				A11CD94C2441DC1300D7177D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A11CD94C2441DC1300D7177D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A11CD94B2441DC1300D7177D /* Googly Eyes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A11CD94D2441DC1300D7177D /* Googly Eyes */ = {
+			isa = PBXGroup;
+			children = (
+				A11CD96B2441E30500D7177D /* Others */,
+				A11CD96A2441E2FB00D7177D /* Extensions */,
+				A11CD96E2441E4A400D7177D /* View */,
+				A11CD9692441E2EC00D7177D /* View Controllers */,
+				A11CD95E2441DC8400D7177D /* Spoopy Eyes */,
+				A11CD9522441DC1A00D7177D /* Assets.xcassets */,
+				A11CD9542441DC1A00D7177D /* Main.storyboard */,
+			);
+			path = "Googly Eyes";
+			sourceTree = "<group>";
+		};
+		A11CD95E2441DC8400D7177D /* Spoopy Eyes */ = {
+			isa = PBXGroup;
+			children = (
+				A11CD95F2441DCB800D7177D /* FaceFinder.swift */,
+				A11CD9602441DCB800D7177D /* GooglyEyes.swift */,
+				A11CD9632441DE2A00D7177D /* GooglyEyeScene.swift */,
+			);
+			path = "Spoopy Eyes";
+			sourceTree = "<group>";
+		};
+		A11CD9692441E2EC00D7177D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A11CD9502441DC1300D7177D /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A11CD96A2441E2FB00D7177D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A11CD96B2441E30500D7177D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A11CD9582441DC1A00D7177D /* Googly_Eyes.entitlements */,
+				A11CD94E2441DC1300D7177D /* AppDelegate.swift */,
+				A11CD9572441DC1A00D7177D /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A11CD96E2441E4A400D7177D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A11CD96C2441E4A000D7177D /* DragAndDropView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A11CD94A2441DC1300D7177D /* Googly Eyes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A11CD95B2441DC1A00D7177D /* Build configuration list for PBXNativeTarget "Googly Eyes" */;
+			buildPhases = (
+				A11CD9472441DC1300D7177D /* Sources */,
+				A11CD9482441DC1300D7177D /* Frameworks */,
+				A11CD9492441DC1300D7177D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Googly Eyes";
+			productName = "Googly Eyes";
+			productReference = A11CD94B2441DC1300D7177D /* Googly Eyes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A11CD9432441DC1300D7177D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Emily Blackwell";
+				TargetAttributes = {
+					A11CD94A2441DC1300D7177D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A11CD9462441DC1300D7177D /* Build configuration list for PBXProject "Googly Eyes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A11CD9422441DC1300D7177D;
+			productRefGroup = A11CD94C2441DC1300D7177D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A11CD94A2441DC1300D7177D /* Googly Eyes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A11CD9492441DC1300D7177D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11CD9532441DC1A00D7177D /* Assets.xcassets in Resources */,
+				A11CD9562441DC1A00D7177D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A11CD9472441DC1300D7177D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11CD9662441E2DE00D7177D /* ViewController + Actions.swift in Sources */,
+				A11CD96D2441E4A000D7177D /* DragAndDropView.swift in Sources */,
+				A11CD9512441DC1300D7177D /* ViewController.swift in Sources */,
+				A11CD9612441DCB800D7177D /* FaceFinder.swift in Sources */,
+				A11CD9622441DCB800D7177D /* GooglyEyes.swift in Sources */,
+				A11CD94F2441DC1300D7177D /* AppDelegate.swift in Sources */,
+				A11CD9642441DE2A00D7177D /* GooglyEyeScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A11CD9542441DC1A00D7177D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A11CD9552441DC1A00D7177D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A11CD9592441DC1A00D7177D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A11CD95A2441DC1A00D7177D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A11CD95C2441DC1A00D7177D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Googly Eyes/Googly_Eyes.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VC3JB53HL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Googly Eyes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.emilyblackwell.Googly-Eyes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A11CD95D2441DC1A00D7177D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Googly Eyes/Googly_Eyes.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VC3JB53HL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Googly Eyes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.emilyblackwell.Googly-Eyes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A11CD9462441DC1300D7177D /* Build configuration list for PBXProject "Googly Eyes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11CD9592441DC1A00D7177D /* Debug */,
+				A11CD95A2441DC1A00D7177D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A11CD95B2441DC1A00D7177D /* Build configuration list for PBXNativeTarget "Googly Eyes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11CD95C2441DC1A00D7177D /* Debug */,
+				A11CD95D2441DC1A00D7177D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A11CD9432441DC1300D7177D /* Project object */;
+}
