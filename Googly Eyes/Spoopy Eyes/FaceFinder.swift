@@ -45,7 +45,7 @@ public func findFace(in image: GEImage, completion: (@escaping (VNRequest) -> ()
 
 // MARK: Positioning Helpers
 
-public func findCentre(of points: [CGPoint], size: CGSize) -> CGPoint {
+public func findCentre(of points: [CGPoint]) -> CGPoint {
     
     var centre = CGPoint(x: 0, y: 0)
     
@@ -70,6 +70,5 @@ public func getSize(of points: [CGPoint], scale: CGFloat = 2.5) -> CGSize {
     }
     
     let size = abs(maxPoint.x - minPoint.x) * scale
-    
     return CGSize(width: size, height: size)
 }

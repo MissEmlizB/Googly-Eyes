@@ -51,9 +51,11 @@ extension ViewController {
 	}
 	
 	func setBusy(_ busy: Bool) {
+		
+		processingBackground.isHidden = !busy
 		processingIndicator.isHidden = !busy
 		
-		(busy ? processingIndicator.stopAnimation(self)
-			  : processingIndicator.startAnimation(self))
+		(busy ? processingIndicator.startAnimation(self)
+			  : processingIndicator.stopAnimation(self))
 	}
 }

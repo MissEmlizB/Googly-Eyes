@@ -193,22 +193,33 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <progressIndicator hidden="YES" wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="wk3-FU-XhW">
-                                <rect key="frame" x="224" y="156" width="32" height="32"/>
+                            <visualEffectView hidden="YES" wantsLayer="YES" blendingMode="withinWindow" material="popover" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-Wh-NGT">
+                                <rect key="frame" x="208" y="140" width="64" height="64"/>
+                                <subviews>
+                                    <progressIndicator hidden="YES" wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="wk3-FU-XhW">
+                                        <rect key="frame" x="16" y="16" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="VZw-YO-ysX"/>
+                                            <constraint firstAttribute="height" constant="32" id="hat-yY-pH0"/>
+                                        </constraints>
+                                    </progressIndicator>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="VZw-YO-ysX"/>
-                                    <constraint firstAttribute="height" constant="32" id="hat-yY-pH0"/>
+                                    <constraint firstAttribute="height" constant="64" id="CPJ-eT-yv0"/>
+                                    <constraint firstItem="wk3-FU-XhW" firstAttribute="centerY" secondItem="P4R-Wh-NGT" secondAttribute="centerY" id="KP3-WZ-FKd"/>
+                                    <constraint firstItem="wk3-FU-XhW" firstAttribute="centerX" secondItem="P4R-Wh-NGT" secondAttribute="centerX" id="kGz-s4-2mc"/>
+                                    <constraint firstAttribute="width" constant="64" id="oID-BX-6gj"/>
                                 </constraints>
-                            </progressIndicator>
+                            </visualEffectView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Azz-UW-b37" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="16" id="0Yt-v4-Ot4"/>
+                            <constraint firstItem="P4R-Wh-NGT" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="14l-Hb-6Jx"/>
                             <constraint firstItem="3dR-WY-EbF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="3xY-qb-Tfo"/>
                             <constraint firstItem="3dR-WY-EbF" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="6wt-DT-VEy"/>
-                            <constraint firstItem="wk3-FU-XhW" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Y0j-lP-UNC"/>
                             <constraint firstAttribute="trailing" secondItem="3dR-WY-EbF" secondAttribute="trailing" id="c1i-re-F8C"/>
                             <constraint firstAttribute="bottom" secondItem="3dR-WY-EbF" secondAttribute="bottom" id="h46-yF-zhl"/>
-                            <constraint firstItem="wk3-FU-XhW" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="sR9-H7-lt4"/>
+                            <constraint firstItem="P4R-Wh-NGT" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="jKZ-yH-tVz"/>
                             <constraint firstItem="Azz-UW-b37" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="sZH-UP-agU"/>
                         </constraints>
                         <connections>
@@ -216,6 +227,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="processingBackground" destination="P4R-Wh-NGT" id="Nr4-6x-6AO"/>
                         <outlet property="processingIndicator" destination="wk3-FU-XhW" id="fBl-Lu-P33"/>
                         <outlet property="sceneView" destination="qKa-Fe-IdE" id="uP9-2m-i0i"/>
                         <outlet property="scrollView" destination="3dR-WY-EbF" id="HeC-SG-a9b"/>

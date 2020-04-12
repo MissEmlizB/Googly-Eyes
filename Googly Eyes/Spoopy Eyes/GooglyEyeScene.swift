@@ -15,6 +15,8 @@ public final class GooglyEyeScene: SKScene {
 	var photo: GEImage?
 	var completion: (() -> ())?
 	
+	// MARK: Scene
+	
 	public init(photo: GEImage?, processingFinished completion: (() -> ())?) {
 		
 		super.init(size: photo?.size ?? .zero)
@@ -58,7 +60,12 @@ public final class GooglyEyeScene: SKScene {
 				return
 			}
 			
-			self.addEyes(to: faces, size: photoSize)
+			for face in faces {
+				let landmarks = face.landmarks
+
+				self.addEye(landmarks?.leftEye, size: photoSize)
+				self.addEye(landmarks?.rightEye, size: photoSize)
+			}
 			
 			DispatchQueue.main.async {
 				self.completion?()
@@ -69,31 +76,22 @@ public final class GooglyEyeScene: SKScene {
 		self.scaleMode = .aspectFill
 	}
 	
-	private func addEyes(to faces: [VNFaceObservation], size photoSize: CGSize) {
+	private func addEye(_ landmark: VNFaceLandmarkRegion2D?, size photoSize: CGSize) {
 		
-		for face in faces {
-			let landmarks = face.landmarks
-			
-			guard let lEye = landmarks?.leftEye,
-				let rEye = landmarks?.rightEye else {
-					return
-			}
-			
-			// Place it at the centre of each eye
-			let lPoints = lEye.pointsInImage(imageSize: photoSize)
-			let rPoints = rEye.pointsInImage(imageSize: photoSize)
-			
-			let left = findCentre(of: lPoints, size: photoSize)
-			let right = findCentre(of: rPoints, size: photoSize)
-			
-			// Try to find the best size for it
-			let leftSize = getSize(of: lPoints)
-			let rightSize = getSize(of: rPoints)
-			
-			DispatchQueue.main.async {
-				self.addChild(GooglyEye(left, size: leftSize))
-				self.addChild(GooglyEye(right, size: rightSize))
-			}
+		guard let landmark = landmark else {
+			return
+		}
+		
+		let points = landmark.pointsInImage(imageSize: photoSize)
+		
+		// Find its position and size
+		let centre = findCentre(of: points)
+		let size = getSize(of: points)
+		let eye = GooglyEye(centre, size: size)
+		
+		// Add it to our scene
+		DispatchQueue.main.async {
+			self.addChild(eye)
 		}
 	}
 }
