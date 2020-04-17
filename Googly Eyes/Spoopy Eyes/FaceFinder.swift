@@ -38,9 +38,7 @@ public func findFace(in image: GEImage, completion: (@escaping (VNRequest) -> ()
     guard let image = image.cgImage else { return }
     let handler = VNImageRequestHandler(cgImage: image, options: [:])
     
-	DispatchQueue.global(qos: .userInitiated).async {
-		try? handler.perform([request])
-	}
+	try? handler.perform([request])
 }
 
 // MARK: Positioning Helpers

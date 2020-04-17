@@ -6,68 +6,20 @@
 	<array>
 		<dict>
 			<key>ModifiedContent</key>
-			<string>// Photo by Naassom Azevedo on Unsplash
-// Disable 'results' if it crashes
-
-import SpriteKit
-import Vision
+			<string>import SpriteKit
 import PlaygroundSupport
 
-// Change 'photo' to whatever picture you want to ruin (improve)
-let photo = #imageLiteral(resourceName: "78B577D4-3499-4B7E-AE57-04C8214150E0.jpg")
-let photoSize = photo.size 
 
-// SpriteKit scene
-let scene = SKScene(size: photoSize)
-let view = SKView(frame: CGRect(origin: .zero, size: photoSize))
+let image = #imageLiteral(resourceName: "78B577D4-3499-4B7E-AE57-04C8214150E0.jpg")
+let scene = GooglyEyeScene(photo: image)
 
-// Photo background
-let photoTexture = SKTexture(image: photo)
-let bg = SKSpriteNode(texture: photoTexture)
-
-bg.position = CGPoint(x: photoSize.width/2, y: photoSize.height/2)
-
-scene.addChild(bg)
-
-// Googly eyes
-findFace(in: photo) {
-    
-    guard let faces = $0.results as? [VNFaceObservation] else {
-        return
-    }
-    
-    for face in faces {
-        let landmarks = face.landmarks
-        
-        guard let lEye = landmarks?.leftEye,
-            let rEye = landmarks?.rightEye else {
-                return
-        }
-        
-        // Place it at the centre of each eye
-        let lPoints = lEye.pointsInImage(imageSize: photoSize)
-        let rPoints = rEye.pointsInImage(imageSize: photoSize)
-        
-        let left = findCentre(of: lPoints, size: photoSize)
-        let right = findCentre(of: rPoints, size: photoSize)
-        
-        // Try to find the best size for it
-        let leftSize = getSize(of: lPoints)
-        let rightSize = getSize(of: rPoints)
-        
-        scene.addChild(GooglyEye(left, size: leftSize))
-        scene.addChild(GooglyEye(right, size: rightSize))
-    }
-}
-
-// Live view
-scene.scaleMode = .aspectFill
-
+let view = SKView()
 view.presentScene(scene)
+
 PlaygroundPage.current.liveView = view
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 1655}</string>
+			<string>{0, 255}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>

@@ -33,7 +33,7 @@ extension ViewController {
 	
 	func setPhoto(photo: NSImage?) {
 		
-		let scene = GooglyEyeScene(photo: photo) {
+		let scene = GooglyEyeScene(photo: photo, blend: true) {
 			self.setBusy(false)
 		}
 		

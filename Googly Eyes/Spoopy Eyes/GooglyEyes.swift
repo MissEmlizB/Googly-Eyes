@@ -2,7 +2,7 @@ import SpriteKit
 
 
 let textures = (1...8)
-    .map { SKTexture(imageNamed: "eye\($0)") }
+    .map { SKTexture(imageNamed: "eye-\($0)") }
 
 let first = textures.first
 let firstSize = first?.size() ?? .zero

@@ -16,6 +16,7 @@
 		A11CD9642441DE2A00D7177D /* GooglyEyeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9632441DE2A00D7177D /* GooglyEyeScene.swift */; };
 		A11CD9662441E2DE00D7177D /* ViewController + Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */; };
 		A11CD96D2441E4A000D7177D /* DragAndDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD96C2441E4A000D7177D /* DragAndDropView.swift */; };
+		A1674E97244A3609003C1A5B /* ColourPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E96244A3609003C1A5B /* ColourPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A11CD9632441DE2A00D7177D /* GooglyEyeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglyEyeScene.swift; sourceTree = "<group>"; };
 		A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Actions.swift"; sourceTree = "<group>"; };
 		A11CD96C2441E4A000D7177D /* DragAndDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropView.swift; sourceTree = "<group>"; };
+		A1674E96244A3609003C1A5B /* ColourPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				A11CD95F2441DCB800D7177D /* FaceFinder.swift */,
 				A11CD9602441DCB800D7177D /* GooglyEyes.swift */,
 				A11CD9632441DE2A00D7177D /* GooglyEyeScene.swift */,
+				A1674E96244A3609003C1A5B /* ColourPicker.swift */,
 			);
 			path = "Spoopy Eyes";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				A11CD9622441DCB800D7177D /* GooglyEyes.swift in Sources */,
 				A11CD94F2441DC1300D7177D /* AppDelegate.swift in Sources */,
 				A11CD9642441DE2A00D7177D /* GooglyEyeScene.swift in Sources */,
+				A1674E97244A3609003C1A5B /* ColourPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
