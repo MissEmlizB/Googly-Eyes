@@ -6,38 +6,11 @@
 //  Copyright © 2020 Emily Blackwell. All rights reserved.
 //
 
-#if os(macOS)
-import Cocoa
-public typealias GEColour = NSColor
+import Foundation
+import CoreGraphics
 
-#elseif os(iOS)
-import UIKit
-public typealias GEColour = UIColor
 
-extension GEColour {
-    var components: [CGFloat] {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        
-        self.getRed(&red, green: &green, blue: &blue, alpha: nil)
-        return [red, green, blue]
-    }
-    
-    var redComponent: CGFloat {
-        return components[0]
-    }
-    
-    var greenComponent: CGFloat {
-        return components[1]
-    }
-    
-    var blueComponent: CGFloat {
-        return components[2]
-    }
-}
-#endif
-
+// MARK: Colour Picker
 
 extension CGImage {
 	

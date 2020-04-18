@@ -16,6 +16,7 @@ class ViewController: NSViewController, DragAndDropViewDelegate {
 	@IBOutlet weak var scrollView: NSScrollView!
 	@IBOutlet weak var processingIndicator: NSProgressIndicator!
 	@IBOutlet weak var processingBackground: NSVisualEffectView!
+	@IBOutlet weak var pauseIndicator: NSVisualEffectView!
 	
 	var dndView: DragAndDropView! {
 		return (self.view as! DragAndDropView)

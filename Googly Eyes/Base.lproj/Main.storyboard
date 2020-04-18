@@ -64,6 +64,17 @@
                                                 <action selector="openPhotoWithSender:" target="Ady-hI-5gd" id="nmy-cK-yvK"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Save Photo" keyEquivalent="s" id="qs5-2z-UjM">
+                                            <connections>
+                                                <action selector="savePhotoWithSender:" target="Ady-hI-5gd" id="Hkn-lV-Dk4"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="y0i-10-FXE"/>
+                                        <menuItem title="Toggle Pause" keyEquivalent="0" id="Ks7-WR-nkv">
+                                            <connections>
+                                                <action selector="togglePauseWithSender:" target="Ady-hI-5gd" id="A0d-vB-EAd"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                             <connections>
@@ -193,6 +204,30 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <visualEffectView hidden="YES" wantsLayer="YES" blendingMode="withinWindow" material="popover" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-ZZ-gLK">
+                                <rect key="frame" x="293" y="253" width="167" height="54"/>
+                                <subviews>
+                                    <textField wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gew-mQ-APK">
+                                        <rect key="frame" x="27" y="13" width="113" height="28"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="⏸ Paused" id="7XG-9V-dqR">
+                                            <font key="font" metaFont="system" size="24"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="0Gw-oz-yv4"/>
+                                    <constraint firstItem="gew-mQ-APK" firstAttribute="centerY" secondItem="XmO-ZZ-gLK" secondAttribute="centerY" id="K9O-1e-L9z"/>
+                                    <constraint firstAttribute="width" constant="167" id="QWO-dA-dab"/>
+                                    <constraint firstItem="gew-mQ-APK" firstAttribute="centerX" secondItem="XmO-ZZ-gLK" secondAttribute="centerX" id="pVQ-RT-ohS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
                             <visualEffectView hidden="YES" wantsLayer="YES" blendingMode="withinWindow" material="popover" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="P4R-Wh-NGT">
                                 <rect key="frame" x="208" y="140" width="64" height="64"/>
                                 <subviews>
@@ -217,7 +252,9 @@
                             <constraint firstItem="P4R-Wh-NGT" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="14l-Hb-6Jx"/>
                             <constraint firstItem="3dR-WY-EbF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="3xY-qb-Tfo"/>
                             <constraint firstItem="3dR-WY-EbF" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="6wt-DT-VEy"/>
+                            <constraint firstItem="XmO-ZZ-gLK" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="36" id="S7u-nq-iOe"/>
                             <constraint firstAttribute="trailing" secondItem="3dR-WY-EbF" secondAttribute="trailing" id="c1i-re-F8C"/>
+                            <constraint firstAttribute="trailing" secondItem="XmO-ZZ-gLK" secondAttribute="trailing" constant="20" id="gVP-cN-W4g"/>
                             <constraint firstAttribute="bottom" secondItem="3dR-WY-EbF" secondAttribute="bottom" id="h46-yF-zhl"/>
                             <constraint firstItem="P4R-Wh-NGT" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="jKZ-yH-tVz"/>
                             <constraint firstItem="Azz-UW-b37" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="sZH-UP-agU"/>
@@ -227,6 +264,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="pauseIndicator" destination="XmO-ZZ-gLK" id="UCm-Ia-KAj"/>
                         <outlet property="processingBackground" destination="P4R-Wh-NGT" id="Nr4-6x-6AO"/>
                         <outlet property="processingIndicator" destination="wk3-FU-XhW" id="fBl-Lu-P33"/>
                         <outlet property="sceneView" destination="qKa-Fe-IdE" id="uP9-2m-i0i"/>

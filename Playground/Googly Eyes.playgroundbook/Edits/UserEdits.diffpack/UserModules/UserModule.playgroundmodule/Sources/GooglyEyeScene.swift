@@ -10,16 +10,15 @@ import SpriteKit
 import Vision
 
 
-// Colour blending options
-fileprivate let colourAveragingDistance: CGFloat = 250
-fileprivate let colourAveragingSamples = 300
-
-
 public final class GooglyEyeScene: SKScene {
     
     var photo: GEImage?
     
     // Colour blending properties
+    var blendAveragingFactor: CGFloat = 0.34
+    var blendAveragingDistance: CGFloat = 400
+    var blendAveragingSamples = 100
+    
     private var appliesBlending: Bool = true
     private var cgImage: CGImage?
     private var photoData: Data?
@@ -138,7 +137,7 @@ public final class GooglyEyeScene: SKScene {
             let averageColour = self.getAverageColour(at: centre, size: photoSize)
             
             eye.color = averageColour
-            eye.colorBlendFactor = 0.34
+            eye.colorBlendFactor = self.blendAveragingFactor
         }
         
         // Add it to our scene
@@ -161,12 +160,12 @@ public final class GooglyEyeScene: SKScene {
         var colourBlend: [CGFloat] = [0, 0, 0]
         
         let scale = (size.width / 1920.0)
-        let distance = colourAveragingDistance * scale
+        let distance = self.blendAveragingDistance * scale
         let colourAveragingRange = (-distance...distance)
         
         // Randomly pick spots around the point
         
-        let points = (0 ..< colourAveragingSamples).map { _ -> CGPoint in
+        let points = (0 ..< self.blendAveragingSamples).map { _ -> CGPoint in
             
             let rx = point.x + CGFloat.random(in: colourAveragingRange)
             let ry = point.y + CGFloat.random(in: colourAveragingRange)
@@ -188,7 +187,7 @@ public final class GooglyEyeScene: SKScene {
         for colour in colours {
             
             #if os(macOS)
-            guard let colour = colour.usingColorSpace(.deviceRGB) else {
+            guard let colour = colour.deviceColourspaceColour else {
                 continue
             }
             #endif
@@ -204,3 +203,4 @@ public final class GooglyEyeScene: SKScene {
                         alpha: 1.0)
     }
 }
+

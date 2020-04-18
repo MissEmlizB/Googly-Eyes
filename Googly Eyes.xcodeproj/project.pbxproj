@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A11CD94F2441DC1300D7177D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD94E2441DC1300D7177D /* AppDelegate.swift */; };
 		A11CD9512441DC1300D7177D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9502441DC1300D7177D /* ViewController.swift */; };
-		A11CD9532441DC1A00D7177D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11CD9522441DC1A00D7177D /* Assets.xcassets */; };
 		A11CD9562441DC1A00D7177D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A11CD9542441DC1A00D7177D /* Main.storyboard */; };
 		A11CD9612441DCB800D7177D /* FaceFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD95F2441DCB800D7177D /* FaceFinder.swift */; };
 		A11CD9622441DCB800D7177D /* GooglyEyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9602441DCB800D7177D /* GooglyEyes.swift */; };
@@ -17,7 +16,26 @@
 		A11CD9662441E2DE00D7177D /* ViewController + Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */; };
 		A11CD96D2441E4A000D7177D /* DragAndDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD96C2441E4A000D7177D /* DragAndDropView.swift */; };
 		A1674E97244A3609003C1A5B /* ColourPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E96244A3609003C1A5B /* ColourPicker.swift */; };
+		A182901E244B647A0039D1E3 /* Common Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184F2EF244B5EB8003444D3 /* Common Extensions.swift */; };
+		A184F2E2244B4AD1003444D3 /* Googly_Eyes___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184F2E1244B4AD1003444D3 /* Googly_Eyes___Tests.swift */; };
+		A184F2E9244B4AD9003444D3 /* ColourPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E96244A3609003C1A5B /* ColourPicker.swift */; };
+		A184F2EA244B4ADC003444D3 /* GooglyEyeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9632441DE2A00D7177D /* GooglyEyeScene.swift */; };
+		A184F2EB244B4ADF003444D3 /* GooglyEyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD9602441DCB800D7177D /* GooglyEyes.swift */; };
+		A184F2EC244B4AE2003444D3 /* FaceFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CD95F2441DCB800D7177D /* FaceFinder.swift */; };
+		A184F2ED244B4B73003444D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11CD9522441DC1A00D7177D /* Assets.xcassets */; };
+		A184F2EE244B4BE8003444D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11CD9522441DC1A00D7177D /* Assets.xcassets */; };
+		A184F2F0244B5EB8003444D3 /* Common Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184F2EF244B5EB8003444D3 /* Common Extensions.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A184F2E4244B4AD1003444D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11CD9432441DC1300D7177D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A11CD94A2441DC1300D7177D;
+			remoteInfo = "Googly Eyes";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A11CD94B2441DC1300D7177D /* Googly Eyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Googly Eyes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,10 +51,21 @@
 		A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Actions.swift"; sourceTree = "<group>"; };
 		A11CD96C2441E4A000D7177D /* DragAndDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropView.swift; sourceTree = "<group>"; };
 		A1674E96244A3609003C1A5B /* ColourPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourPicker.swift; sourceTree = "<group>"; };
+		A184F2DF244B4AD0003444D3 /* Googly Eyes - Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Googly Eyes - Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A184F2E1244B4AD1003444D3 /* Googly_Eyes___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Googly_Eyes___Tests.swift"; sourceTree = "<group>"; };
+		A184F2E3244B4AD1003444D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A184F2EF244B5EB8003444D3 /* Common Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A11CD9482441DC1300D7177D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A184F2DC244B4AD0003444D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				A11CD94D2441DC1300D7177D /* Googly Eyes */,
+				A184F2E0244B4AD0003444D3 /* Googly Eyes - Tests */,
 				A11CD94C2441DC1300D7177D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A11CD94B2441DC1300D7177D /* Googly Eyes.app */,
+				A184F2DF244B4AD0003444D3 /* Googly Eyes - Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A11CD9652441E2DE00D7177D /* ViewController + Actions.swift */,
+				A184F2EF244B5EB8003444D3 /* Common Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -121,6 +153,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A184F2E0244B4AD0003444D3 /* Googly Eyes - Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A184F2E1244B4AD1003444D3 /* Googly_Eyes___Tests.swift */,
+				A184F2E3244B4AD1003444D3 /* Info.plist */,
+			);
+			path = "Googly Eyes - Tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +182,24 @@
 			productReference = A11CD94B2441DC1300D7177D /* Googly Eyes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A184F2DE244B4AD0003444D3 /* Googly Eyes - Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A184F2E8244B4AD1003444D3 /* Build configuration list for PBXNativeTarget "Googly Eyes - Tests" */;
+			buildPhases = (
+				A184F2DB244B4AD0003444D3 /* Sources */,
+				A184F2DC244B4AD0003444D3 /* Frameworks */,
+				A184F2DD244B4AD0003444D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A184F2E5244B4AD1003444D3 /* PBXTargetDependency */,
+			);
+			name = "Googly Eyes - Tests";
+			productName = "Googly Eyes - Tests";
+			productReference = A184F2DF244B4AD0003444D3 /* Googly Eyes - Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +212,10 @@
 				TargetAttributes = {
 					A11CD94A2441DC1300D7177D = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					A184F2DE244B4AD0003444D3 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A11CD94A2441DC1300D7177D;
 					};
 				};
 			};
@@ -170,6 +233,7 @@
 			projectRoot = "";
 			targets = (
 				A11CD94A2441DC1300D7177D /* Googly Eyes */,
+				A184F2DE244B4AD0003444D3 /* Googly Eyes - Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,8 +243,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11CD9532441DC1A00D7177D /* Assets.xcassets in Resources */,
+				A184F2EE244B4BE8003444D3 /* Assets.xcassets in Resources */,
 				A11CD9562441DC1A00D7177D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A184F2DD244B4AD0003444D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A184F2ED244B4B73003444D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11CD9662441E2DE00D7177D /* ViewController + Actions.swift in Sources */,
+				A184F2F0244B5EB8003444D3 /* Common Extensions.swift in Sources */,
 				A11CD96D2441E4A000D7177D /* DragAndDropView.swift in Sources */,
 				A11CD9512441DC1300D7177D /* ViewController.swift in Sources */,
 				A11CD9612441DCB800D7177D /* FaceFinder.swift in Sources */,
@@ -202,7 +275,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A184F2DB244B4AD0003444D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A184F2E2244B4AD1003444D3 /* Googly_Eyes___Tests.swift in Sources */,
+				A184F2E9244B4AD9003444D3 /* ColourPicker.swift in Sources */,
+				A184F2EB244B4ADF003444D3 /* GooglyEyes.swift in Sources */,
+				A182901E244B647A0039D1E3 /* Common Extensions.swift in Sources */,
+				A184F2EA244B4ADC003444D3 /* GooglyEyeScene.swift in Sources */,
+				A184F2EC244B4AE2003444D3 /* FaceFinder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A184F2E5244B4AD1003444D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A11CD94A2441DC1300D7177D /* Googly Eyes */;
+			targetProxy = A184F2E4244B4AD1003444D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A11CD9542441DC1A00D7177D /* Main.storyboard */ = {
@@ -369,6 +463,48 @@
 			};
 			name = Release;
 		};
+		A184F2E6244B4AD1003444D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VC3JB53HL;
+				INFOPLIST_FILE = "Googly Eyes - Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.emilyblackwell.Googly-Eyes---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Googly Eyes.app/Contents/MacOS/Googly Eyes";
+			};
+			name = Debug;
+		};
+		A184F2E7244B4AD1003444D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4VC3JB53HL;
+				INFOPLIST_FILE = "Googly Eyes - Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.emilyblackwell.Googly-Eyes---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Googly Eyes.app/Contents/MacOS/Googly Eyes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +522,15 @@
 			buildConfigurations = (
 				A11CD95C2441DC1A00D7177D /* Debug */,
 				A11CD95D2441DC1A00D7177D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A184F2E8244B4AD1003444D3 /* Build configuration list for PBXNativeTarget "Googly Eyes - Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A184F2E6244B4AD1003444D3 /* Debug */,
+				A184F2E7244B4AD1003444D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

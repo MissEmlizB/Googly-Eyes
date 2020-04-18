@@ -40,6 +40,10 @@
 				<key>File</key>
 				<string>UserModules/UserModule.playgroundmodule/Sources/GooglyEyeScene.swift</string>
 			</dict>
+			<dict>
+				<key>File</key>
+				<string>UserModules/UserModule.playgroundmodule/Sources/Common Extensions.swift</string>
+			</dict>
 		</array>
 		<key>Modified</key>
 		<array>

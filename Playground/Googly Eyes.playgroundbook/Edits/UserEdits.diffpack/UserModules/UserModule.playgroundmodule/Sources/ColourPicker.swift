@@ -6,38 +6,11 @@
 //  Copyright © 2020 Emily Blackwell. All rights reserved.
 //
 
-#if os(macOS)
-import Cocoa
-public typealias GEColour = NSColor
+import Foundation
+import CoreGraphics
 
-#elseif os(iOS)
-import UIKit
-public typealias GEColour = UIColor
 
-extension GEColour {
-    var components: [CGFloat] {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        
-        self.getRed(&red, green: &green, blue: &blue, alpha: nil)
-        return [red, green, blue]
-    }
-    
-    var redComponent: CGFloat {
-        return components[0]
-    }
-    
-    var greenComponent: CGFloat {
-        return components[1]
-    }
-    
-    var blueComponent: CGFloat {
-        return components[2]
-    }
-}
-#endif
-
+// MARK: Colour Picker
 
 extension CGImage {
     
@@ -74,7 +47,7 @@ extension CGImage {
         }
         
         return points.map {
-            // Get its index (in the data array)
+            // Get its index (in the data)
             let i = (Int($0.x) * bpc) + (Int($0.y) * bpr)
             
             // Make sure that we don't cause any crashes
@@ -83,7 +56,7 @@ extension CGImage {
             }
             
             // Get its RGBA components
-            let components = (0...3).map {
+            let components = (0...4).map {
                 CGFloat(data[i + $0]) / 255.0
             }
             

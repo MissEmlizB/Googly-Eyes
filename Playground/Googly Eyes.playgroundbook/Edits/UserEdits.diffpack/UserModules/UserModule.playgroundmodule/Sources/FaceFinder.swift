@@ -1,32 +1,5 @@
 import Vision
 
-#if os(macOS)
-
-import Cocoa
-public typealias GEImage = NSImage
-
-extension NSImage {
-    public var cgImage: CGImage? {
-        var rect = CGRect(origin: .zero, size: self.size)
-        return self.cgImage(forProposedRect: &rect, context: .current, hints: nil)
-    }
-}
-
-#elseif os(iOS)
-
-import UIKit
-public typealias GEImage = UIImage
-
-#endif
-
-
-extension CGPoint: Comparable {
-    
-    public static func < (lhs: CGPoint, rhs: CGPoint) -> Bool {
-        return (lhs.x + lhs.y) < (rhs.x + rhs.y)
-    }
-}
-
 public func findFace(in image: GEImage, completion: (@escaping (VNRequest) -> ())) {
     
     let request = VNDetectFaceLandmarksRequest {
@@ -44,20 +17,7 @@ public func findFace(in image: GEImage, completion: (@escaping (VNRequest) -> ()
 // MARK: Positioning Helpers
 
 public func findCentre(of points: [CGPoint]) -> CGPoint {
-    
-    var centre = CGPoint(x: 0, y: 0)
-    
-    for point in points {
-        centre.x += point.x
-        centre.y += point.y
-    }
-    
-    let count = CGFloat(points.count)
-    
-    centre.x = (centre.x / count)
-    centre.y = (centre.y / count)
-    
-    return centre
+    return points.reduce(.zero, +) / points.count
 }
 
 public func getSize(of points: [CGPoint], scale: CGFloat = 2.5) -> CGSize {
